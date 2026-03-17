@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephany Cano — Diseño & Ilustración</title>
+  <link rel="stylesheet" href="../front/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- nav de informacion -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav-logo">SC</a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#portafolio">Portafolio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="overlay-menu" id="overlayMenu" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Cerrar">✕</button>
+    <nav class="overlay-nav">
+      <a href="#portafolio" class="overlay-link">Portafolio</a>
+      <a href="#sobre-mi" class="overlay-link">Sobre mí</a>
+      <a href="#servicios" class="overlay-link">Servicios</a>
+      <a href="#contacto" class="overlay-link">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-num">01</div>
+    <div class="hero-body">
+      <p class="hero-eyebrow">Diseñadora gráfica · Ilustradora</p>
+      <h1 class="hero-name">
+        <span class="line-wrap"><span class="line">Stephany</span></span>
+        <span class="line-wrap italic"><span class="line">Cano</span></span>
+      </h1>
+      <p class="hero-sub">Identidades que permanecen.<br/>Imágenes que significan.</p>
+    </div>
+    <div class="hero-foot">
+      <a href="#portafolio" class="scroll-cta">
+        <span>Ver trabajo</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M7 1v12M1 7l6 6 6-6" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <div class="hero-line"></div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section class="section" id="portafolio">
+    <div class="section-meta">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Portafolio</h2>
+    </div>
+    <div class="filter-row">
+      <button class="f-btn active" data-f="all">Todo</button>
+      <button class="f-btn" data-f="branding">Branding</button>
+      <button class="f-btn" data-f="ilustracion">Ilustración</button>
+      <button class="f-btn" data-f="editorial">Editorial</button>
+    </div>
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-item" data-cat="branding">
+        <div class="work-img" style="--c1:#eae6e0;--c2:#d5cfc7;">
+          <div class="work-sym">◻</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Branding</span>
+          <h3>Identidad Atelier Nube</h3>
+          <span class="work-yr">2024</span>
+        </div>
+      </article>
+
+      <article class="work-item wide" data-cat="ilustracion">
+        <div class="work-img" style="--c1:#e4e8e2;--c2:#c8d2c6;">
+          <div class="work-sym">◇</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Ilustración</span>
+          <h3>Serie Lineal — Naturalezas</h3>
+          <span class="work-yr">2024</span>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="editorial">
+        <div class="work-img" style="--c1:#e8e4e8;--c2:#d2c8d2;">
+          <div class="work-sym">▭</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Editorial</span>
+          <h3>Libro Formas del Silencio</h3>
+          <span class="work-yr">2023</span>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="branding">
+        <div class="work-img" style="--c1:#e8e8e2;--c2:#d2d2c6;">
+          <div class="work-sym">○</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Branding</span>
+          <h3>Marca Estudio Raíz</h3>
+          <span class="work-yr">2023</span>
+        </div>
+      </article>
+
+      <article class="work-item" data-cat="ilustracion">
+        <div class="work-img" style="--c1:#e2e8e8;--c2:#c6d2d2;">
+          <div class="work-sym">△</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Ilustración</span>
+          <h3>Retratos Botánicos</h3>
+          <span class="work-yr">2023</span>
+        </div>
+      </article>
+
+      <article class="work-item wide" data-cat="editorial">
+        <div class="work-img" style="--c1:#e8e8e8;--c2:#d0d0d0;">
+          <div class="work-sym">⬡</div>
+          <div class="work-overlay">Ver proyecto</div>
+        </div>
+        <div class="work-info">
+          <span class="work-cat">Editorial</span>
+          <h3>Revista Pausa — Vol. 3</h3>
+          <span class="work-yr">2022</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section sobre" id="sobre-mi">
+    <div class="section-meta">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Sobre mí</h2>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-foto reveal">
+        <div class="foto-box"><span>EM</span></div>
+        <p class="foto-caption">Elena Mora · Ciudad de México</p>
+      </div>
+      <div class="sobre-txt reveal">
+        <p class="sobre-lead">Diseñadora gráfica e ilustradora con 8 años creando identidades visuales que resisten el tiempo.</p>
+        <p>Trabajo en la intersección entre el diseño de sistemas y la ilustración. Cada proyecto empieza con escucha, continúa con investigación y termina con una imagen que dice exactamente lo necesario — nada más.</p>
+        <p>He colaborado con estudios de arquitectura, editoriales independientes, marcas de moda y proyectos culturales en México, España y Argentina.</p>
+        <div class="tag-list">
+          <span>Identidad visual</span><span>Ilustración</span><span>Tipografía</span>
+          <span>Editorial</span><span>Packaging</span><span>Art direction</span>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><strong>8</strong><span>años</span></div>
+          <div class="stat"><strong>90+</strong><span>proyectos</span></div>
+          <div class="stat"><strong>4</strong><span>premios</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="section-meta">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Servicios</h2>
+    </div>
+    <div class="serv-list">
+      <div class="serv-item reveal">
+        <div class="serv-head">
+          <span class="serv-n">01</span>
+          <h3>Identidad Visual</h3>
+          <span class="serv-arr">→</span>
+        </div>
+        <p>Diseño de marca completo: logotipo, sistema tipográfico, paleta, iconografía y guía de uso. Para marcas que quieren construir presencia duradera.</p>
+      </div>
+      <div class="serv-item reveal">
+        <div class="serv-head">
+          <span class="serv-n">02</span>
+          <h3>Ilustración</h3>
+          <span class="serv-arr">→</span>
+        </div>
+        <p>Ilustraciones digitales y de línea para libros, campañas, packaging y proyectos editoriales. Estilo limpio, adaptable, siempre original.</p>
+      </div>
+      <div class="serv-item reveal">
+        <div class="serv-head">
+          <span class="serv-n">03</span>
+          <h3>Diseño Editorial</h3>
+          <span class="serv-arr">→</span>
+        </div>
+        <p>Libros, revistas, catálogos y memorias con atención milimétrica a la composición, jerarquía tipográfica y ritmo visual.</p>
+      </div>
+      <div class="serv-item reveal">
+        <div class="serv-head">
+          <span class="serv-n">04</span>
+          <h3>Packaging</h3>
+          <span class="serv-arr">→</span>
+        </div>
+        <p>Empaques que comunican antes de ser abiertos. Diseño de estructura, gráficas y selección de materiales y acabados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="section-meta">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Contacto</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <p class="contact-lead">¿Tienes un proyecto en mente? <em>Hablemos.</em></p>
+        <div class="contact-info">
+          <a href="mailto:hola@elenamora.com" class="c-mail">hola@elenamora.com</a>
+          <div class="c-socials">
+            <a href="#" class="c-soc" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="#" class="c-soc" target="_blank" rel="noopener">Behance ↗</a>
+            <a href="#" class="c-soc" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="cForm" novalidate>
+        <div class="field">
+          <input type="text" id="fn" name="nombre" placeholder=" " required autocomplete="name"/>
+          <label for="fn">Nombre</label>
+        </div>
+        <div class="field">
+          <input type="email" id="fe" name="email" placeholder=" " required autocomplete="email"/>
+          <label for="fe">Correo electrónico</label>
+        </div>
+        <div class="field field-sel">
+          <select id="fs" name="servicio">
+            <option value="">Seleccionar servicio</option>
+            <option>Identidad Visual</option>
+            <option>Ilustración</option>
+            <option>Diseño Editorial</option>
+            <option>Packaging</option>
+            <option>Otro</option>
+          </select>
+          <label for="fs" class="sel-label">Servicio</label>
+        </div>
+        <div class="field">
+          <textarea id="fm" name="mensaje" rows="4" placeholder=" " required></textarea>
+          <label for="fm">Mensaje</label>
+        </div>
+        <button type="submit" class="send-btn">
+          <span>Enviar mensaje</span>
+          <span class="send-arr">→</span>
+        </button>
+        <p class="form-ok" id="formOk">Mensaje recibido — te escribo pronto.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Elena Mora</span>
+    <a href="#inicio" class="up-btn" aria-label="Volver arriba">↑</a>
+  </footer>
+
+  <script src="../front/js/script.js"></script>
+</body>
+</html>
