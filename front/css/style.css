@@ -1,8 +1,4 @@
-/* ================================================
-   ELENA MORA — PORTFOLIO
-   Estética: Minimalista · Refinada · Tipográfica
-   Fuentes: Cormorant Garamond + Jost
-   ================================================ */
+
 
 /* ---- VARIABLES ---- */
 :root {
@@ -10,8 +6,8 @@
   --off:     #f3f1ee;
   --bone:    #e8e4de;
   --ink:     #1c1c1a;
-  --ink-mid: #4a4844;
-  --ink-low: #9a9692;
+  --ink-mid: #41403e;
+  --ink-low: #4f4f4e;
   --rule:    rgba(28,28,26,.1);
   --accent:  #1c1c1a;
 
@@ -149,19 +145,26 @@ img { display: block; max-width: 100%; }
 
 /* ---- HERO ---- */
 .hero {
+  align-items: center;
+  text-align: center;
   min-height: 100svh;
   display:grid;
   grid-template-rows: 1fr auto;
+  
   padding: 0 var(--pad);
-  padding-top: 8rem;
+  padding-top: 1rem;
   position: relative;
 }
 .hero-num {
-  position: absolute; top: 8rem; right: var(--pad);
-  font-family: var(--serif); font-size: .75rem;
+  position: absolute; top: 5rem; right: var(--pad);
+  font-family: var(--serif); font-size: .80rem;
   color: var(--ink-low); letter-spacing: .2em;
 }
-.hero-body { align-self: center; padding-bottom: 3rem; }
+.hero-body {
+
+   align-self:center;
+    padding-bottom: 3rem; 
+  }
 .hero-eyebrow {
   font-size: .7rem;
   letter-spacing: .22em;
