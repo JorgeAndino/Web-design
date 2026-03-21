@@ -104,17 +104,7 @@ img { display: block; max-width: 100%; }
   display: block; width: 22px; height: 1px; background: var(--ink);
   transition: transform .35s var(--ease), opacity .35s;
 }
-.work-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform .5s ease;
-}
 
-.work-item:hover .work-img img {
-  transform: scale(1.04);
-}
 /* ---- OVERLAY MENU ---- */
 .overlay-menu {
   position: fixed; inset: 0;
@@ -209,7 +199,7 @@ img { display: block; max-width: 100%; }
 
 .hero-foot {
   display: flex; align-items: center; gap: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   animation: fadeIn .8s .6s both;
 }
 .scroll-cta {
@@ -424,13 +414,13 @@ img { display: block; max-width: 100%; }
 .c-mail::after {
   content: '';
   position: absolute; bottom: -2px; left: 0;
-  width: 100%; height: 1px; background: var(--rule);
+  width: 100%; height: 2px; background: var(--rule);
   transition: background .3s;
 }
 .c-mail:hover::after { background: var(--ink); }
-.c-socials { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.c-socials { display: flex; gap: 2rem; flex-wrap: wrap; }
 .c-soc {
-  font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+  font-size: 1rem; letter-spacing: .12em; text-transform: uppercase;
   color: var(--ink-low); transition: color .25s;
 }
 .c-soc:hover { color: var(--ink); }
@@ -519,7 +509,17 @@ img { display: block; max-width: 100%; }
   transition: opacity .7s var(--ease), transform .7s var(--ease);
 }
 .reveal.in { opacity: 1; transform: none; }
+.work-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s cubic-bezier(.4,0,.2,1);
+}
 
+.work-item:hover .work-img img {
+  transform: scale(1.05);
+}
 /* ---- RESPONSIVE ---- */
 @media (max-width: 1024px) {
   .work-grid { grid-template-columns: repeat(2, 1fr); }

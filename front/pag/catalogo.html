@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephanie Cano — Diseño & Ilustración</title>
+  <link rel="icon" type="image/png" href="../../wicon.png" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/catalogo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav-logo"><img src="../../img/icon.png" alt="Logo" height="60px"/></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <!-- <a href="../../index.html">Atras</a> -->
+      <!-- <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a> -->
+              <div class="hero-foot">
+      <a href="../../index.html" class="scroll-cta">
+        <span>Volver</span>
+        <svg width="30" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M12 7 L6 7 L8 5 M6 7 L8 9" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </a>
+      <div class="hero-line"></div>
+    </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="overlay-menu" id="overlayMenu" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Cerrar">✕</button>
+    <nav class="overlay-nav">
+      <a href="index.html#portafolio" class="overlay-link">Portafolio</a>
+      <a href="index.html#sobre-mi" class="overlay-link">Sobre mí</a>
+      <a href="index.html#servicios" class="overlay-link">Servicios</a>
+      <a href="index.html#contacto" class="overlay-link">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- HERO CATÁLOGO -->
+  <section class="cat-hero">
+    <div class="cat-hero-inner">
+      <p class="cat-eyebrow">Obra completa</p>
+      <h1 class="cat-title">Catálogo</h1>
+      <p class="cat-desc">Todos los proyectos, todas las disciplinas.</p>
+    </div>
+    <div class="cat-count" id="catCount">— 12 piezas</div>
+  </section>
+
+  <!-- FILTROS + GRID -->
+  <main class="cat-main">
+
+    <div class="cat-filters" id="catFilters">
+      <button class="f-btn active" data-f="all">Todo</button>
+      <button class="f-btn" data-f="branding">Branding</button>
+      <button class="f-btn" data-f="ilustracion">Ilustración</button>
+      <button class="f-btn" data-f="editorial">Editorial</button>
+      <button class="f-btn" data-f="packaging">Packaging</button>
+    </div>
+
+    <div class="masonry" id="masonry">
+
+      <div class="m-item" data-cat="ilustracion" data-title="Ilustración digital de un gato" data-year="2026" data-cat-label="Ilustración" data-desc="Toda la familia Lara ama los animales. Sobre todo, los gatos. Haciendo estas ilustraciones pensaba en todo lo que ellas me comparten de sus gatunos y cuánto los aman.">
+        <div class="m-img">
+          <img src="../../img/gato.webp" alt="Ilustración digital de un gato" />
+        </div>
+        <div class="m-info">
+          <span class="m-cat">Ilustración</span>
+          <h3 class="m-title">Ilustración digital de un gato</h3>
+          <div class="m-meta">
+            <span>2026</span>
+            <span class="m-desc-short">Toda la familia Lara ama los animales. Sobre todo, los gatos.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-item" data-cat="branding" data-title="Identidad Atelier Nube" data-year="2024" data-cat-label="Branding" data-desc="Sistema de identidad completo para estudio de moda emergente.">
+        <div class="m-img" style="--c1:#eae6e0;--c2:#d0cab8;">
+          <img src="../../img/gato.webp"/>
+          <span class="m-cat">Ilustracion</span>
+          <h3 class="m-title">Ilustracion digital de un gato</h3>
+          <div class="m-meta"><span>2026</span><span class="m-desc-short">Toda la familia Lara ama los animales. Sobre todo, los gatos. Haciendo estas ilustraciones pensaba en todo lo que ellas me comparten de sus gatunos y cuanto los aman y asi como a mi, como nos consuelan.</span></div>
+        </div>
+      </div>
+
+            <div class="m-item" data-cat="branding" data-title="Identidad Atelier Nube" data-year="2024" data-cat-label="Branding" data-desc="Sistema de identidad completo para estudio de moda emergente.">
+        <div class="m-img" ><img src="../../img/gato.webp"/></div>
+        <div class="m-info">
+          <span class="m-cat">Ilustracion</span>
+          <h3 class="m-title">Ilustracion digital de un gato</h3>
+          <div class="m-meta"><span>2026</span><span class="m-desc-short">Toda la familia Lara ama los animales. Sobre todo, los gatos. Haciendo estas ilustraciones pensaba en todo lo que ellas me comparten de sus gatunos y cuanto los aman y asi como a mi, como nos consuelan.</span></div>
+        </div>
+      </div>
+
+            <div class="m-item" data-cat="branding" data-title="Identidad Atelier Nube" data-year="2024" data-cat-label="Branding" data-desc="Sistema de identidad completo para estudio de moda emergente.">
+        <div class="m-img" ><img src="../../img/gato.webp"/></div>
+        <div class="m-info">
+          <span class="m-cat">Ilustracion</span>
+          <h3 class="m-title">Ilustracion digital de un gato</h3>
+          <div class="m-meta"><span>2026</span><span class="m-desc-short">Toda la familia Lara ama los animales. Sobre todo, los gatos. Haciendo estas ilustraciones pensaba en todo lo que ellas me comparten de sus gatunos y cuanto los aman y asi como a mi, como nos consuelan.</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="no-results" id="noResults" aria-live="polite">Sin resultados para este filtro.</p>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Vista ampliada" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Anterior">←</button>
+    <button class="lb-next" id="lbNext" aria-label="Siguiente">→</button>
+    <div class="lb-inner">
+      <div class="lb-img-wrap" id="lbImgWrap">
+
+      </div>
+      <div class="lb-details">
+        <span class="lb-cat" id="lbCat"></span>
+        <h2 class="lb-title" id="lbTitle"></h2>
+        <p class="lb-desc" id="lbDesc"></p>
+        <span class="lb-year" id="lbYear"></span>
+      </div>
+    </div>
+  </div>
+  <div class="lb-backdrop" id="lbBackdrop"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Stephanie Cano </span>
+    <a href="#" class="up-btn" aria-label="Volver arriba">↑</a>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>
