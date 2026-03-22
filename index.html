@@ -200,7 +200,7 @@
         <div class="stat-row">
           <div class="stat"><strong>3</strong><span>años</span></div>
           <div class="stat"><strong>40+</strong><span>proyectos</span></div>
-          <div class="stat"><strong>4</strong><span>premios</span></div>
+          <!-- <div class="stat"><strong>4</strong><span>premios</span></div> -->
         </div>
       </div>
     </div>
@@ -266,36 +266,43 @@
           </div>
         </div>
       </div>
-      <form class="contact-form reveal" id="cForm" novalidate method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <div class="field">
-          <input type="text" id="fn" name="nombre" placeholder=" " required autocomplete="name"/>
-          <label for="fn">Nombre</label>
-        </div>
-        <div class="field">
-          <input type="email" id="fe" name="email" placeholder=" " required autocomplete="email"/>
-          <label for="fe">Correo electrónico</label>
-        </div>
-        <div class="field field-sel">
-          <select id="fs" name="servicio">
-            <option value="">Seleccionar servicio</option>
-            <option>Identidad Visual</option>
-            <option>Ilustración</option>
-            <option>Diseño Editorial</option>
-            <option>Packaging</option>
-            <option>Otro</option>
-          </select>
-          <label for="fs" class="sel-label">Servicio</label>
-        </div>
-        <div class="field">
-          <textarea id="fm" name="mensaje" rows="4" placeholder=" " required></textarea>
-          <label for="fm">Mensaje</label>
-        </div>
-        <button type="submit" class="send-btn">
-          <span>Enviar mensaje</span>
-          <span class="send-arr">→</span>
-        </button>
-        <p class="form-ok" id="formOk">Mensaje recibido — te escribo pronto.</p>
-      </form>
+<form class="contact-form reveal" id="cForm" novalidate method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+  
+
+  <input type="hidden" name="form-name" value="contact" />
+  <p class="hidden" style="display:none;">
+    <input name="bot-field" />
+  </p>
+
+  <div class="field">
+    <input type="text" id="fn" name="nombre" placeholder=" " required autocomplete="name"/>
+    <label for="fn">Nombre</label>
+  </div>
+  <div class="field">
+    <input type="email" id="fe" name="email" placeholder=" " required autocomplete="email"/>
+    <label for="fe">Correo electrónico</label>
+  </div>
+  <div class="field field-sel">
+    <select id="fs" name="servicio">
+      <option value="">Seleccionar servicio</option>
+      <option>Identidad Visual</option>
+      <option>Ilustración</option>
+      <option>Diseño Editorial</option>
+      <option>Packaging</option>
+      <option>Otro</option>
+    </select>
+    <label for="fs" class="sel-label">Servicio</label>
+  </div>
+  <div class="field">
+    <textarea id="fm" name="mensaje" rows="4" placeholder=" " required></textarea>
+    <label for="fm">Mensaje</label>
+  </div>
+  <button type="submit" class="send-btn">
+    <span>Enviar mensaje</span>
+    <span class="send-arr">→</span>
+  </button>
+  <!-- <p class="form-ok" id="formOk">Mensaje recibido — te escribo pronto.</p> -->
+</form>
     </div>
   </section>
 
